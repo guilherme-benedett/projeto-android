@@ -1,0 +1,165 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #dbab6388;
+    margin: auto;
+}
+main{
+    background-color: #ffffff;
+    margin: auto;
+    min-width: 280px;
+    max-width: 800px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px #000000a9;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+    
+header{
+    background-image: linear-gradient(to top, #455dfa, #9ca9ffb2);
+    min-height: 150px;
+}
+/* esse min height serve para ajustar o tamanho da cabecalho conforme a janela diminui */
+/* ela ocupa 150px quando a janela esta com toda sua largura, diminui conforme diminui a largura da janela */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+
+header > h1{
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #ffffff;
+    font-weight: 700;
+    text-shadow: 1px 1px 3px #000000;
+    padding-top: 35px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+header > p{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #ffffff;
+    text-shadow: 1px 1px 3px #000000;
+    padding-top: 20px;
+ 
+}
+nav{
+    background-color: #455dfa;
+    padding: 10px;
+    box-shadow: 0px 4px 3px #00000067;
+}
+nav > a{
+    text-decoration: none;
+    color: #ffffff;
+    padding-right: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    transition-duration: .5s;
+    /* esse transition serve para quando passar o mouse encima, aparece o botao personalizado */
+}
+p > a{
+    text-decoration: none;
+    color: #000000;
+    background-color: #0000ff31;
+    padding: 3px;
+    border-radius: 5px;
+}
+nav > a:hover{
+    background-color: #324cf5;
+    padding: 8px;
+    border-radius: 5px;
+}
+@font-face {
+    font-family: 'idroid';
+    src: url('fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+article > h1{
+    font-family: 'idroid';
+    color: #0202c2;
+}
+.degrade{
+    background-image: linear-gradient(to right, #0051ff6c, #ffffff00);
+    padding-left: 4px;
+}
+article > p{
+    font-family: Arial, Helvetica, sans-serif;
+    text-indent: 18px;
+    text-align: justify;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    line-height: 1.5em;
+}
+strong{
+    color: #020275;
+}
+.links:after{
+    content: '\00A0\1F517';
+
+}
+img{
+    width: 100%;
+}
+.bugdroid{
+    display: block;
+    margin: auto;
+    max-width: 350px;
+}
+.video{
+    position: relative;
+    background-color: #0a14a759;
+    margin: 0px -10px;
+    padding: 10px 0px;
+    padding-bottom: 56.4%;
+
+}
+div > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    
+}
+aside{
+    background-color: #455dfa4f;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    margin: 10px;
+}
+aside > p{
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 10px;
+    text-align: justify;
+    text-indent: 18px;
+    font-size: 14px;
+}
+aside > h3{
+    background-color: #0202c2;
+    color: #ffffff;
+    padding: 6px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+aside > ul{
+    list-style-position: inside;
+    columns: 2;
+    padding-left: 10px;
+    list-style-type: '\2714\00A0\00A0';
+}
+footer{
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    margin-top: 20px;
+}
+
